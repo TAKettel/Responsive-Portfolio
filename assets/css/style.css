@@ -1,0 +1,265 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url("../images/prism.png");
+    background-repeat: repeat-x repeat-y;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #777777;
+}
+
+
+header {
+    background: #ffffff;
+    width: 100%;
+    height: 60px;
+    outline: 2px solid #cccccc;
+}
+
+.headText {
+    width: 960px;
+    position: relative;
+    margin: auto;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.navwrap {
+    position: absolute;
+    right: 10px;
+    top: 20px;
+}
+
+.horzBreak {
+    width: 825px;
+    height: 4px;
+    background: #cccccc;
+    border-radius: 2px;
+    position: relative;
+    margin: auto;
+    margin-bottom: 10px;
+    z-index: 3;
+    
+}
+
+.h1 {
+    background: #4aaaa5;
+    width: 360px;
+    height: 60px;
+    position: absolute;
+    padding: 15px 0;
+    left: 0;
+    text-align: center;
+    text-shadow: 1px 1px #666666;
+    font-weight: bold;
+    color: #ffffff;
+    font-size: 30px;
+}
+
+a {
+    color: #969696;
+    padding: 0 2.5px;
+    text-decoration: none;
+}
+
+.block {
+    width: 960px;
+    background: #ffffff;
+    margin: 20px auto;
+    text-indent: 8px;
+    position: relative;
+    line-height: 1.5em;
+    overflow: hidden;
+}
+
+.contactBlock {
+    padding: 20px;
+}
+
+input::placeholder {
+    color: #cccccc; 
+}
+
+textarea::placeholder {
+    color: #cccccc; 
+}
+
+.title {
+    font-size: 30px;
+    color: #4aaaa5;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin: 0px 10px;
+    font-weight: bold;
+    padding: 20px 0;
+}
+
+#starTrek {
+    width: 200px;
+    border: 2px solid #666666;
+    float: left;
+    margin: 20px;
+}
+
+.thumbBox {
+    width: 200px;
+    height: 200px;
+    margin: 15px;
+    position: relative;
+    left: 12px;
+    outline: 4px solid #666666;
+    float: left;
+    transition: transform .2s;
+}
+
+.thumbBox:hover {
+    transform: scale(1.1);
+}
+
+.thumbnail {
+    width: 200px;
+    position: absolute;
+    left: 0;
+}
+
+img {
+    float:left;
+}
+
+.portTitle {
+    position: absolute;
+    float: left;
+    width: 200px;
+    background-color: #4aaaa5;
+    margin: auto;
+    color: #ffffff;
+    z-index: 5;
+    text-align: center;
+    bottom: 20px;
+}
+
+footer {
+    border-top: 8px solid #4aaaa5;
+    padding-top: 24px;
+    background: #666666;
+    color: #cccccc;
+    text-align: center;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+}
+
+input {
+    clear: both;
+    width: 100%;
+    margin: auto;
+    max-width: 920px;
+}
+
+textarea {
+    width: 100%;
+    height: 100px;
+    margin: auto;
+    max-width: 920px;
+}
+
+label {
+    line-height: 2em;
+    font-weight: bold;
+    margin-left: 25px;
+}
+
+p {
+    margin: 0 25px;
+    padding-top: 20px;
+}
+
+p::first-letter {
+    font-size: 28px;
+}
+
+
+/* Background pattern from Toptal Subtle Patterns */
+
+@media (max-width: 980px) {
+    .headText {
+        width: 100%;
+    }
+    .horzBreak {
+        width: 500px;
+    }
+    #starTrek {
+        width: 300px;
+    }
+    .block {
+        width: 600px;
+        margin: 20px 0 20px 50px;
+    }
+    .thumbBox  {
+        width: 200px;
+        height: 200px;
+    }
+    .thumbnail {
+        width: 200px;
+    }
+    .portTitle {
+        width: 200px;
+    }
+
+}
+
+@media (max-width: 768px) {
+    #starTrek {
+        width: 300px;
+    }
+    .block {
+        width: 600px;
+        margin: 20px auto;
+    }
+    .thumbBox  {
+        width: 200px;
+        height: 200px;
+    }
+    .thumbnail {
+        width: 200px;
+    }
+    .portTitle {
+        width: 200px;
+    }
+
+}
+
+@media (max-width: 640px) {
+    header {
+        height: 120px;
+    }
+    .h1 {
+        width: 100%;
+    }
+    .navwrap {
+        top: 80px;
+        right: 200px;
+    }
+
+    #starTrek {
+        width: 525px;
+    }
+    .block {
+        width: 580px;
+    }
+    .thumbBox  {
+        width: 525px;
+        height: 525px;
+    }
+    .thumbnail {
+        width: 525px;
+    }
+    .portTitle {
+        width: 525px;
+        font-size: 30px;
+        height: 50px;
+        padding: 10px 0;
+    }
+    .thumbBox:hover {
+        transform: scale(1.025);
+    
+}
